@@ -86,6 +86,82 @@ export default function SelectWalletModal({ isOpen, closeModal }) {
                 <Text>Metamask</Text>
               </HStack>
             </Button>
+            <Button
+              variant="outline"
+              onClick={() => {
+                activate(connectors.injected);
+                closeModal();
+              }}
+              w="100%"
+            >
+              <HStack w="100%" justifyContent="center">
+                <Image
+                  src="/coin98.png"
+                  alt="Metamask Logo"
+                  width={25}
+                  height={25}
+                  borderRadius="3px"
+                />
+                <Text>Coin 98</Text>
+              </HStack>
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() => {
+                activate(connectors.injected);
+                closeModal();
+              }}
+              w="100%"
+            >
+              <HStack w="100%" justifyContent="center">
+                <Image
+                  src="/coin98.png"
+                  alt="Coin 98 Logo"
+                  width={25}
+                  height={25}
+                  borderRadius="3px"
+                />
+                <Text>Coin 98</Text>
+              </HStack>
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() => {
+                activate(connectors.injected);
+                closeModal();
+              }}
+              w="100%"
+            >
+              <HStack w="100%" justifyContent="center">
+                <Image
+                  src="/tokenpocket.png"
+                  alt="Token Pocket Logo"
+                  width={25}
+                  height={25}
+                  borderRadius="3px"
+                />
+                <Text>Token Pocket</Text>
+              </HStack>
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() => {
+                activate(connectors.injected);
+                closeModal();
+              }}
+              w="100%"
+            >
+              <HStack w="100%" justifyContent="center">
+                <Image
+                  src="/mathwallet.png"
+                  alt="Math Wallet Logo"
+                  width={25}
+                  height={25}
+                  borderRadius="3px"
+                />
+                <Text>Math Wallet</Text>
+              </HStack>
+            </Button>
           </VStack>
         </ModalBody>
       </ModalContent>
