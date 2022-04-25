@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 import { useWeb3React } from "@web3-react/core";
-import { connectors } from "./connectors";
+import { connectors } from "./Connectors";
 
 export default function SelectWalletModal({ isOpen, closeModal }) {
   const { activate } = useWeb3React();
@@ -33,7 +33,7 @@ export default function SelectWalletModal({ isOpen, closeModal }) {
               variant="outline"
               onClick={() => {
                 activate(connectors.coinbaseWallet);
-                closeModal();
+                
               }}
               w="100%"
             >
@@ -52,7 +52,7 @@ export default function SelectWalletModal({ isOpen, closeModal }) {
               variant="outline"
               onClick={() => {
                 activate(connectors.walletConnect);
-                closeModal();
+                
               }}
               w="100%"
             >
@@ -71,7 +71,7 @@ export default function SelectWalletModal({ isOpen, closeModal }) {
               variant="outline"
               onClick={() => {
                 activate(connectors.injected);
-                closeModal();
+                
               }}
               w="100%"
             >
@@ -86,30 +86,12 @@ export default function SelectWalletModal({ isOpen, closeModal }) {
                 <Text>Metamask</Text>
               </HStack>
             </Button>
+          
             <Button
               variant="outline"
               onClick={() => {
                 activate(connectors.injected);
-                closeModal();
-              }}
-              w="100%"
-            >
-              <HStack w="100%" justifyContent="center">
-                <Image
-                  src="/coin98.png"
-                  alt="Metamask Logo"
-                  width={25}
-                  height={25}
-                  borderRadius="3px"
-                />
-                <Text>Coin 98</Text>
-              </HStack>
-            </Button>
-            <Button
-              variant="outline"
-              onClick={() => {
-                activate(connectors.injected);
-                closeModal();
+                
               }}
               w="100%"
             >
@@ -128,7 +110,7 @@ export default function SelectWalletModal({ isOpen, closeModal }) {
               variant="outline"
               onClick={() => {
                 activate(connectors.injected);
-                closeModal();
+                
               }}
               w="100%"
             >
@@ -147,7 +129,7 @@ export default function SelectWalletModal({ isOpen, closeModal }) {
               variant="outline"
               onClick={() => {
                 activate(connectors.injected);
-                closeModal();
+                
               }}
               w="100%"
             >
@@ -160,6 +142,25 @@ export default function SelectWalletModal({ isOpen, closeModal }) {
                   borderRadius="3px"
                 />
                 <Text>Math Wallet</Text>
+              </HStack>
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() => {
+                activate(connectors.blocto);
+                
+              }}
+              w="100%"
+            >
+              <HStack w="100%" justifyContent="center">
+                <Image
+                  src="/blockto.png"
+                  alt="Blockto Logo"
+                  width={25}
+                  height={25}
+                  borderRadius="3px"
+                />
+                <Text>Blockto Wallet</Text>
               </HStack>
             </Button>
           </VStack>

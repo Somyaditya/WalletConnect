@@ -6,7 +6,6 @@ import { truncateAddress } from "./utils";
 import { ethers } from "ethers";
 import Web3Modal from "web3modal";
 import { providerOptions } from "./providerOptions";
-
 const web3Modal = new Web3Modal({
   cacheProvider: true, // optional
   providerOptions, // required
